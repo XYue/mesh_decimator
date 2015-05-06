@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
     //opt.init(opt.EL, value);
     //opt.init(opt.HD, value);
     //opt.init(opt.IS, value);
-    //opt.init(opt.ND, value);
+    //opt.init(opt.ND, value);  // step 1
     //opt.init(opt.NF, value);
     //opt.init(opt.PM, value);
     opt.init(opt.Q,  value);
