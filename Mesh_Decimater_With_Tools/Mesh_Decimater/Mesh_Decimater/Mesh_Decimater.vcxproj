@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3D98AEBA-A427-414F-ACE0-5B7EECB606E0}</ProjectGuid>
+    <RootNamespace>Mesh_Decimater</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\Shared\openmesh\kit\openmesh_latest.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\Shared\openmesh\kit\openmesh_latest.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../../code/decimater_tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>$(OPENMESH_LIB_LIST);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\decimater_tools\BaseDecimaterT.cc" />
+    <ClCompile Include="..\..\code\decimater_tools\DecimaterT.cc" />
+    <ClCompile Include="..\..\code\decimater_tools\McDecimaterT.cc" />
+    <ClCompile Include="..\..\code\decimater_tools\MixedDecimaterT.cc" />
+    <ClCompile Include="..\..\code\decimater_tools\ModAspectRatioT.cc" />
+    <ClCompile Include="..\..\code\decimater_tools\ModEdgeLengthT.cc" />
+    <ClCompile Include="..\..\code\decimater_tools\ModHausdorffT.cc" />
+    <ClCompile Include="..\..\code\decimater_tools\ModProgMeshT.cc" />
+    <ClCompile Include="..\..\code\decimater_tools\ModQuadricT.cc" />
+    <ClCompile Include="..\..\code\mesh_decimater\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\code\decimater_tools\BaseDecimaterT.hh" />
+    <None Include="..\..\code\decimater_tools\CollapseInfoT.hh" />
+    <None Include="..\..\code\decimater_tools\DecimaterT.hh" />
+    <None Include="..\..\code\decimater_tools\McDecimaterT.hh" />
+    <None Include="..\..\code\decimater_tools\MixedDecimaterT.hh" />
+    <None Include="..\..\code\decimater_tools\ModAspectRatioT.hh" />
+    <None Include="..\..\code\decimater_tools\ModBaseT.hh" />
+    <None Include="..\..\code\decimater_tools\ModEdgeLengthT.hh" />
+    <None Include="..\..\code\decimater_tools\ModHausdorffT.hh" />
+    <None Include="..\..\code\decimater_tools\ModIndependentSetsT.hh" />
+    <None Include="..\..\code\decimater_tools\ModNormalDeviationT.hh" />
+    <None Include="..\..\code\decimater_tools\ModNormalFlippingT.hh" />
+    <None Include="..\..\code\decimater_tools\ModProgMeshT.hh" />
+    <None Include="..\..\code\decimater_tools\ModQuadricT.hh" />
+    <None Include="..\..\code\decimater_tools\ModRoundnessT.hh" />
+    <None Include="..\..\code\mesh_decimater\mesh_decimater.template" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\mesh_decimater\CmdOption.h" />
+    <ClInclude Include="..\..\code\mesh_decimater\dec_options.h" />
+    <ClInclude Include="..\..\code\mesh_decimater\mesh_decimater.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

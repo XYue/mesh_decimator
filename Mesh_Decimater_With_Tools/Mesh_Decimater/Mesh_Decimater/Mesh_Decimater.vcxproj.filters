@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="mesh_decimater">
+      <UniqueIdentifier>{343d4f3a-e789-4cb9-9799-4d0dbce09e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decimater_tools">
+      <UniqueIdentifier>{c3c1de97-1b8d-4234-bf49-c24cf2b6cc23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\decimater_tools\BaseDecimaterT.cc">
+      <Filter>decimater_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\decimater_tools\DecimaterT.cc">
+      <Filter>decimater_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\decimater_tools\McDecimaterT.cc">
+      <Filter>decimater_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\decimater_tools\MixedDecimaterT.cc">
+      <Filter>decimater_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\decimater_tools\ModAspectRatioT.cc">
+      <Filter>decimater_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\decimater_tools\ModEdgeLengthT.cc">
+      <Filter>decimater_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\decimater_tools\ModHausdorffT.cc">
+      <Filter>decimater_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\decimater_tools\ModProgMeshT.cc">
+      <Filter>decimater_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\decimater_tools\ModQuadricT.cc">
+      <Filter>decimater_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\mesh_decimater\main.cpp">
+      <Filter>mesh_decimater</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\code\decimater_tools\BaseDecimaterT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\CollapseInfoT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\DecimaterT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\McDecimaterT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\MixedDecimaterT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\ModAspectRatioT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\ModBaseT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\ModEdgeLengthT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\ModHausdorffT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\ModIndependentSetsT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\ModNormalDeviationT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\ModNormalFlippingT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\ModProgMeshT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\ModQuadricT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\decimater_tools\ModRoundnessT.hh">
+      <Filter>decimater_tools</Filter>
+    </None>
+    <None Include="..\..\code\mesh_decimater\mesh_decimater.template">
+      <Filter>mesh_decimater</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\mesh_decimater\CmdOption.h">
+      <Filter>mesh_decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\mesh_decimater\dec_options.h">
+      <Filter>mesh_decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\mesh_decimater\mesh_decimater.h">
+      <Filter>mesh_decimater</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
